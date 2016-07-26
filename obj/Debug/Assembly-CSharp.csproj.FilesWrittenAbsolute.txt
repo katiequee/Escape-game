@@ -1,0 +1,34 @@
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/UnityEngine.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/UnityEditor.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Mono.Cecil.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Unity.DataContract.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/kristieqiu/Desktop/Escape The Room/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/kristieqiu/Desktop/Escape The Room/obj/Debug/Assembly-CSharp.dll
+/Users/kristieqiu/Desktop/Escape The Room/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/kristieqiu/Desktop/Escape game/obj/Debug/Assembly-CSharp.dll
+/Users/kristieqiu/Desktop/Escape game/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/UnityEngine.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/UnityEditor.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Mono.Cecil.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Unity.DataContract.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/kristieqiu/Desktop/Escape game/Temp/bin/Debug/Mono.Cecil.Mdb.dll

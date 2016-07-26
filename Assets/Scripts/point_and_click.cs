@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Linq;
 
 public class point_and_click : MonoBehaviour {
     public Player smithy;
@@ -15,16 +16,18 @@ public class point_and_click : MonoBehaviour {
     public GameObject door;
     public GameObject green;
     public GameObject red;
-	public keypad_handler keypad;
+	public VaultKeyPadHandler keypad;
 
 	// Use this for initialization
 	void Start () {
         notify.text = "WASD to move. Spacebar to close text and progress the game.";
         notify.gameObject.SetActive(true);
+		keypad = new VaultKeyPadHandler();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
 
         if (Input.GetKey(KeyCode.Space))
@@ -160,77 +163,97 @@ public class point_and_click : MonoBehaviour {
                 notify.gameObject.SetActive(true);
 
             }
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key1")
-			{
-				//Debug.Log("1");
-				keypad.inputCode.Add (1);
-				Debug.Log (keypad.inputCode);
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key1")
+            {
+                //Debug.Log("1");
+                keypad.InputNumber(1);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key2")
-			{
-				//Debug.Log("2");
-				keypad.inputCode.Add (2);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key2")
+            {
+                //Debug.Log("2");
+                keypad.InputNumber(2);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key3")
-			{
-				//Debug.Log("3");
-				keypad.inputCode.Add (3);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key3")
+            {
+                //Debug.Log("3");
+                keypad.InputNumber(3);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key4")
-			{
-				//Debug.Log("4");
-				keypad.inputCode.Add (4);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key4")
+            {
+                //Debug.Log("4");
+                keypad.InputNumber(4);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key5")
-			{
-				//Debug.Log("5");
-				keypad.inputCode.Add (5);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key5")
+            {
+                //Debug.Log("5");
+                keypad.InputNumber(5);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key6")
-			{
-				//Debug.Log("6");
-				keypad.inputCode.Add (6);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key6")
+            {
+                //Debug.Log("6");
+                keypad.InputNumber(6);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key7")
-			{
-				//Debug.Log("7");
-				keypad.inputCode.Add (7);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key7")
+            {
+                //Debug.Log("7");
+                keypad.InputNumber(7);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key8")
-			{
-				//Debug.Log("8");
-				keypad.inputCode.Add (8);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key8")
+            {
+                //Debug.Log("8");
+                keypad.InputNumber(8);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key9")
-			{
-				//Debug.Log("9");
-				keypad.inputCode.Add (9);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key9")
+            {
+                //Debug.Log("9");
+                keypad.InputNumber(9);
 
-			}
-			else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key0")
-			{
-				//Debug.Log("0");
-				keypad.inputCode.Add (0);
-				Debug.Log (keypad.inputCode);
+            }
+            else if (Physics.Raycast(ray, out hit) && hit.collider.tag == "key0")
+            {
+                //Debug.Log("0");
+                keypad.InputNumber(0);
 
-			}
+            }
         }
-        }
-	}
+    }
+	public class VaultKeyPadHandler
+        {
+            private int[] code = { 7, 3, 5, 9 };
+            private int[] inputtedcode = new int[4];
+            private int numberon = 0;
 
+            public void InputNumber(int input)
+            {
+                inputtedcode[numberon] = input;
+                if (numberon == 3) //Actually needs to be 3 even though there are 4 numbers because arrays start at 0 in C# hahaaaaaa
+                {
+                    if (Enumerable.SequenceEqual(code, inputtedcode))
+                    {
+                        //Correct code inputted
+                        Debug.Log("Correct Code");
+                    }
+                    else
+                    {
+                        //Incorreect code inputted
+                        Debug.Log("Incorrect Code");
+                    }
+                    numberon = 0;
+                }
+                else
+                {
+                    numberon++;
+                }
+
+            }
+        }
+}
 
